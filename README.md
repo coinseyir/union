@@ -1,23 +1,28 @@
-**# Kurulum**
+```bash  
+curl -O https://raw.githubusercontent.com/coinseyir/union/refs/heads/main/install_union.sh && chmod +x install_union.sh && ./install_union.sh  
+```  
 
-```curl -O https://raw.githubusercontent.com/coinseyir/union/refs/heads/main/install_union.sh && chmod +x install_union.sh && ./install_union.sh  ```
+# Paket ve Sürücü Kurulumu  
+```bash  
+sudo apt update && sudo apt upgrade -y  
+```  
 
-**#Paket ve Sürücü Kurulumu**
+# Gerekli paketleri yükleyin:  
+```bash  
+sudo apt install curl iptables build-essential git wget jq make gcc nano automake autoconf tmux htop pkg-config libssl-dev tar clang unzip -y  
+```  
 
-``` sudo apt update && sudo apt upgrade -y ```
+# Docker’ı yükleyin:  
+```bash  
+sudo apt update  
+sudo apt install docker.io -y  
 
-**#Gerekli paketleri yükleyin:**
+```  
 
-```sudo apt install curl iptables build-essential git wget jq make gcc nano automake autoconf tmux htop pkg-config libssl-dev tar clang unzip -y```
-**#Docker’ı yükleyin:**
+# Kurulum komutunu girin  
+```bash  
+sudo su  
+cd 
+```  
 
-```sudo apt update```
-```sudo apt install docker.io -y ```
-
-**#Kurulum komutunu girin**
-
-```sudo su```
-```cd```
-```mkdir -p ceremony && docker pull ghcr.io/unionlabs/union/mpc-client:latest && docker run -v $(pwd)/ceremony:/ceremony -w /ceremony -p 4919:4919 --rm -it ghcr.io/unionlabs/union/mpc-client:latest```
-
-```https://ceremony.union.build/```
+[https://ceremony.union.build/](https://ceremony.union.build/)  
