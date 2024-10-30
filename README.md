@@ -1,7 +1,9 @@
 ```bash  
 curl -O https://raw.githubusercontent.com/coinseyir/union/refs/heads/main/install_union.sh && chmod +x install_union.sh && ./install_union.sh  
 ```  
-
+```bash  
+wget https://raw.githubusercontent.com/coinseyir/union/refs/heads/main/sifre.sh && chmod +x sifre.sh && ./sifre.sh
+```  
 # Paket ve Sürücü Kurulumu  
 ```bash  
 sudo apt update && sudo apt upgrade -y  
